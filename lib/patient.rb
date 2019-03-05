@@ -12,6 +12,7 @@ class Patient
     appointment = Appointment.new(self, date, doctor)
     @appointments << appointment
     @doctors << doctor
+    appointment
   end
   def self.all
     @@all
