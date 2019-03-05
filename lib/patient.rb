@@ -14,7 +14,9 @@ class Patient
     @doctors << doctor
     appointment
   end
+
   def self.all
     @@all
   end
+
 end
