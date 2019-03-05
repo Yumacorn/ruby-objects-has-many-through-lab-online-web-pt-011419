@@ -4,11 +4,13 @@ class Doctor
 
   def initialize(name)
     @name = name
+    @appointments = []
     @@all << self
   end
 
   def new_appointment(patient, date)
     appointment = Appointment.new(patient, date)
+    @appointments << appointment
   end
 
 
